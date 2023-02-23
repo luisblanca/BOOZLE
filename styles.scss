@@ -1,0 +1,181 @@
+@font-face {
+  font-family: "Abril Fatface";
+  src: url(./assets/AbrilFatface-Regular.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Avenir Next LT Pro";
+  background-color: #f0a04b;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #fefbe9;
+  width: 100%;
+  display: flex;
+  gap: 5rem;
+  height: 5rem;
+  align-items: center;
+  margin-bottom: 12rem;
+  padding-left: 5rem;
+  border-bottom: solid;
+  &__img {
+    width: 10rem;
+  }
+  &__item {
+    list-style: none;
+  }
+  &__link {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #183a1d;
+  }
+  @keyframes font-change {
+    from {
+      font-size: 2rem;
+    }
+    to {
+      font-size: 3rem;
+    }
+  }
+  &__link {
+    animation: font-change 2.5s alternate-reverse infinite;
+  }
+}
+
+.form {
+  height: 33rem;
+  width: 50%;
+  background: url(./assets/backgound.png);
+  background-position: bottom;
+  background-size: cover;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  border: solid 2px #183a1d;
+  margin: 0 auto;
+  justify-content: space-around;
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+  }
+  &__search {
+    width: 80%;
+    font-size: 2rem;
+    height: 4rem;
+    padding-left: 2rem;
+  }
+  &__buttom {
+    height: 4rem;
+    width: 25%;
+    border-radius: 50px;
+    border-style: none;
+    border: solid 2px black;
+    background-color: #183a1d;
+    color: #fefbe9;
+    font-family: Abril Fatface;
+    font-size: 2.5rem;
+  }
+  &__ramdom {
+    width: 40%;
+  }
+}
+
+.cocktails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 0;
+  min-height: 42vh;
+
+  &__box {
+    border: solid 1px #183a1d;
+    border-radius: 5px;
+    background: #fefbe9;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  &__name {
+    font-family: Abril Fatface;
+    //   }
+    //   &__ingridients {
+    //   }
+    //   &__instruction {
+    //   }
+  }
+}
+
+.footer {
+  background-color: #183a1d;
+  width: 100%;
+  display: flex;
+  padding-left: 5rem;
+  gap: 2rem;
+  height: 7rem;
+  align-items: center;
+  &__img {
+    height: 45px;
+    border-radius: 50%;
+  }
+  &__title {
+    color: #fefbe9;
+  }
+}
+
+.spinner {
+  height: 76vh;
+  display: flex;
+  justify-content: center;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 3px solid;
+  border-color: #ff3d00 transparent;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
