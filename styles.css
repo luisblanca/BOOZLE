@@ -29,12 +29,12 @@ html {
   gap: 5rem;
   height: 5rem;
   align-items: center;
-  margin-bottom: 12rem;
+  margin-bottom: 8rem;
   padding-left: 5rem;
   border-bottom: solid;
 }
 .header__img {
-  width: 10rem;
+  width: 15rem;
 }
 .header__item {
   list-style: none;
@@ -75,6 +75,11 @@ html {
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 2rem;
+}
+.form__title {
+  font-size: 7rem;
+  font-family: "Abril Fatface";
+  margin: 0 auto;
 }
 .form__search {
   width: 80%;
@@ -135,10 +140,23 @@ html {
   color: #fefbe9;
 }
 
-.spinner {
-  height: 76vh;
+main {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.appear {
+  display: none;
+}
+
+.magic {
+  display: block;
+  font-size: 3rem;
+  color: #fefbe9;
+  text-align: center;
 }
 
 .loader {

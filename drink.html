@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BOOZLE</title>
+    <title>Free Drink</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -16,32 +16,22 @@
         <a href=""><img class="header__logo" src="" alt="" /></a>
         <ul class="header__list">
           <li class="header__item">
-            <a class="header__link" href="./drink.html">FREE COCKTAIL</a>
+            <a class="header__link" href="./drink.html">FREE DRINK</a>
           </li>
         </ul>
       </section>
     </header>
     <main>
-      <section class="form">
-        <p class="form__title">
-          <span style="color: #0057e7">B</span
-          ><span style="color: #d62d20">O</span
-          ><span style="color: #ffa700">O</span
-          ><span style="color: #0057e7">Z</span
-          ><span style="color: #008744">L</span
-          ><span style="color: #d62d20">E</span>
-        </p>
-        <form class="form__box" action="form">
-          <input
-            class="form__search"
-            type="text"
-            name="ingredient"
-            placeholder="let's drink"
-          />
-          <button type="submit" class="form__buttom">BOOZLE</button>
-        </form>
+      <section class="spinner">
+        <span class="loader"></span>
       </section>
-      <section class="cocktails"></section>
+      <section>
+        <p class="appear">
+          If you are seeing this message, it's because you have been waiting for
+          more than 5 seconds for a free drink. Please use the helpful link
+          provided below
+        </p>
+      </section>
     </main>
     <footer class="footer">
       <h3 class="footer__title">helpful link</h3>
@@ -49,7 +39,6 @@
         <img class="footer__img" src="./assets/download.png" alt=""
       /></a>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./script.js"></script>
+    <script src="./fdrink.js"></script>
   </body>
 </html>

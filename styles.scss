@@ -30,11 +30,11 @@ html {
   gap: 5rem;
   height: 5rem;
   align-items: center;
-  margin-bottom: 12rem;
+  margin-bottom: 8rem;
   padding-left: 5rem;
   border-bottom: solid;
   &__img {
-    width: 10rem;
+    width: 15rem;
   }
   &__item {
     list-style: none;
@@ -76,6 +76,12 @@ html {
     justify-content: space-evenly;
     gap: 2rem;
   }
+  &__title {
+    font-size: 7rem;
+    font-family: "Abril Fatface";
+    margin: 0 auto;
+  }
+
   &__search {
     width: 80%;
     font-size: 2rem;
@@ -142,11 +148,24 @@ html {
   }
 }
 
-.spinner {
-  height: 76vh;
+main {
+  // height: 76vh;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
 }
+.appear {
+  display: none;
+}
+.magic {
+  display: block;
+  font-size: 3rem;
+  color: #fefbe9;
+  text-align: center;
+}
+
 .loader {
   width: 48px;
   height: 48px;
